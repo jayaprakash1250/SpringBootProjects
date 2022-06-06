@@ -1,0 +1,21 @@
+package com.rest.jpa.repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.rest.jpa.models.Student;
+
+public interface StudentRepository extends JpaRepository<Student,Integer> {
+
+	List<Student> findByStandard(int standard);
+	List<Student> findBySchool(String school);
+	
+	@Query("select s from student s where s.percentage >=40.0")
+	List<Student> findAllPassedstudents();
+	
+	@Query("select s from student s where s.percentage < 40.0")
+	List<Student> findAllFailedstudents();
+
+}

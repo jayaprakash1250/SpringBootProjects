@@ -1,0 +1,28 @@
+package com.example.demo.models;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("emp")
+@Scope("prototype")
+//@Lazy
+public class Employee {
+	
+	private String name;
+	private int id;
+	private int salary;
+	private Address address;
+	
+	public Employee()
+	{
+		System.out.println("Employee obj created");
+	}
+	
+	@Override
+	public String toString() {
+		System.out.println(address);
+		return "Employee [name=" + name + ", id=" + id + ", salary=" + salary + "]";
+	}
+
+}

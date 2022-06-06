@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		BeanFactory factory = SpringApplication.run(DemoApplication.class, args);
+		Object obj1 = factory.getBean("emp");
+		Object obj2 = factory.getBean("emp");
+		
+		System.out.print(obj1.hashCode());
+		System.out.print(obj2.hashCode());
+		
+	}
+
+}

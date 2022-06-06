@@ -1,0 +1,5 @@
+package com.rest.jpa.respositories;
+
+public interface EmployeeRepository {
+
+}

@@ -1,0 +1,51 @@
+<h1> Employee Management Application </h1>
+<hr>
+<h2> Create Employee </h2>
+<form action = "createEmp">
+   <h3>
+     Enter Id : <input type = "number" name = "eid"><br/>
+     Enter name : <input type = "text" name = "name"><br/>
+     Enter age : <input type = "number" name = "age"><br/>
+     Enter salary : <input type = "number" name = "salary"><br/>
+     Enter designation : <input type = "text" name = "designation"><br/>
+     <br/>
+     
+     <input type = "submit" value = "INSERT"/>
+     <input type = "reset" value = "RESET"/>
+   </h3>
+</form>
+<hr>
+<h2> Search Employee </h2><hr>
+<form action = "searchEmp">
+   <h3>
+     Enter Id : <input type = "number" name = "eid">
+     
+     <input type = "submit" value = "search"/>
+     
+   </h3>
+</form>
+<hr>
+<h2> Update Employee </h2><hr>
+<form action = "updateEmp">
+   <h3>
+     Enter Id : <input type = "number" name = "eid"><br/>
+     Enter name : <input type = "text" name = "name"><br/>
+     Enter age : <input type = "number" name = "age"><br/>
+     Enter salary : <input type = "number" name = "salary"><br/>
+     Enter designation : <input type = "text" name = "designation"><br/>
+     <br/>
+     
+     <input type = "submit" value = "INSERT"/>
+     <input type = "reset" value = "RESET"/>
+   </h3>
+</form>
+<hr>
+ <h2> Delete Employee </h2><hr>
+<form action = "deleteEmp">
+   <h3>
+     Enter Id : <input type = "number" name = "eid">
+     
+     <input type = "submit" value = "delete"/>
+     
+   </h3>
+</form>    

@@ -1,0 +1,30 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ParamController {
+	
+	@GetMapping("/params")
+	public String queryParamDemo(@RequestParam("user") String name,@RequestParam int age)
+	{
+		return "<h1> your good name is "+name+" and you are "+age+" years old";
+	}
+	
+	@PostMapping("/params")
+	public String queryParamDemo2(String name, int age)
+	{
+		return "<h1> your good name is "+name+" and you are "+age+" years old";
+	}
+	
+	@GetMapping("/params/:name/:age")
+	public String pathParamDemo( String name,int age)
+	{
+		return "<h1> your good name is "+name+" and you are "+age+" years old";
+	}
+	
+
+}

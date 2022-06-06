@@ -1,0 +1,7 @@
+server.port=9090
+
+
+spring.datasource.driver-class-name=oracle.jdbc.Oracle.driver
+spring.datasource.url=jdbc:oracle:thin:@localhost:151:xe
+spring.datasource.username=system
+spring.datasource.password=tiger

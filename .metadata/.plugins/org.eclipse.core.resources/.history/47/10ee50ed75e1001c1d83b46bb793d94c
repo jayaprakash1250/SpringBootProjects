@@ -1,0 +1,17 @@
+<h1> Employee Management Application </h1>
+<hr>
+<h2> Create Employee </h2>
+<form action = "createEmp">
+   <h3>
+     Enter Id : <input type = "tex" name = "eid"><br/>
+     Enter Id : <input type = "tex" name = "eid"><br/>
+     Enter Id : <input type = "tex" name = "eid"><br/>
+     Enter Id : <input type = "tex" name = "eid"><br/>
+     Enter Id : <input type = "tex" name = "eid"><br/>
+     <br/>
+     
+     <input type = "submit" value = "INSERT"/>
+     <input type = "reset" value = "RESET"/>
+   </h3>
+</form>
+     

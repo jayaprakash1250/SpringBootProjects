@@ -1,0 +1,39 @@
+package com.example.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+
+import com.example.demo.models.Address;
+import com.example.demo.models.Employee;
+
+@Configuration
+public class MyConfiguration {
+	@Bean("emp1")
+	@Lazy
+	public Employee getEmployee1()
+	{
+		return new Employee("JP",22,25000,"Programmer");
+	}
+	@Bean("emp2")
+    @Scope("prototype")
+	public Employee getEmployee2()
+	{
+		Employee e = new Employee();
+		e.setName("Suraj");
+		e.setAge(22);
+		e.setDesignation("Tester");
+		e.setSalary(22500);
+		return e;
+		
+	}
+	
+	@Bean("addr1")
+	public Address getAddress1()
+	{
+		return new Address("TN","Chennai",123211);
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.rest.jpa.models;
+
+public class Student {
+
+}

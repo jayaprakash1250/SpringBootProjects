@@ -1,0 +1,28 @@
+package com.example.demo.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.demo.models.Employee;
+
+@Configuration
+public class MyConfiguration {
+	@Bean("emp1")
+	public Employee getEmployee1()
+	{
+		return new Employee("JP",22,25000,"Programmer");
+	}
+	@Bean("emp2")
+	public Employee getEmployee2()
+	{
+		Employee e = new Employee();
+		e.setName("Suraj");
+		e.setAge(22);
+		e.setDesignation("Tester");
+		e.setSalary(22500);
+		return e;
+		
+	}
+	
+
+}

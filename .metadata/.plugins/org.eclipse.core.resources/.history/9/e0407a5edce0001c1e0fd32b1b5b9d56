@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title> Register </title>
+</head>
+
+<body>
+<h1> Register Page </h1>
+<form action = "register">
+
+ UserName : <input type = "text" name = "name"/><br/>
+ UserName : <input type = "text" name = "name"/><br/>
+ UserName : <input type = "text" name = "name"/><br/>
+ UserName : <input type = "text" name = "name"/><br/><br/>
+ 
+ <input type = "submit" value = "SUBMIT"/><br/>
+ <input type = "reset" value = "RESET"/>
+ 
+ 
+</form>
+
+ 
+

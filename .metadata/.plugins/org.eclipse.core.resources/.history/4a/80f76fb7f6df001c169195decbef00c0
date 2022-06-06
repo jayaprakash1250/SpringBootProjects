@@ -1,0 +1,20 @@
+package com.example.demo.models;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("emp")
+//@Scope("prototype")
+@Lazy
+public class Employee {
+	
+	private String name;
+	private int id;
+	private int salary;
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", id=" + id + ", salary=" + salary + "]";
+	}
+
+}
